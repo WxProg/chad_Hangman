@@ -20,9 +20,9 @@ print("Can you get him the justice he deserves?\n")
 
 for _ in range(word_length):
     display += "_"
-
+print(f"Hint: The word contains {len(display)} letters.")
 while not end_of_game:
-    guess = input("Guess a letter: ").lower()
+    guess = input("\nGuess a letter: ").lower()
     #Inform the user, letter is already guessed.
     if guess in already_guessed:
         print("Letter is already guessed. Guess again!")
